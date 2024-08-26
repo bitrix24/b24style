@@ -1,2 +1,2 @@
 # b24style
-Дизайн токены UIKit Битрикс24 для разработки веб-приложений
+Bitrix24 UI-Kit design tokens for web-application development
