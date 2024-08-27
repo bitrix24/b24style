@@ -1,0 +1,62 @@
+{
+	"name": "@bitrix24/b24style",
+	"version": "1.1.2",
+	"author": "Bitrix",
+	"license": "MIT",
+	"description": "Design UIKit tokens Bitrix24 for web application development",
+	"keywords": [
+		"bitrix24",
+		"tailwindcss",
+		"ui",
+		"fonts"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bitrix24/b24style.git"
+	},
+	"homepage": "https://github.com/bitrix24/b24style",
+	"bugs": {
+		"url": "https://github.com/bitrix24/b24style/issues"
+	},
+	"staring": {
+		"url": "https://github.com/bitrix24/b24style"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"bin": {
+		"copy-fonts": "./dist/scripts/copyFonts.js"
+	},
+	"scripts": {
+		"build": "tsc",
+		"copy-fonts": "node dist/scripts/copyFonts.js",
+		"copy-fonts-asset": "node dist/scripts/copyFonts.js --dest=asset/css/fonts"
+	},
+	"dependencies": {
+		"@tailwindcss/forms": "^0.5.7",
+		"tailwindcss": "^3.4.10"
+	},
+	"devDependencies": {
+		"ts-node": "^10.0.0",
+		"typescript": "^5.0.0"
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"browserslist": [
+		"> 7%"
+	],
+	"publishConfig": {
+		"access": "public",
+		"branches": [
+			"main"
+		]
+	},
+	"files": [
+		"dist",
+		"fonts",
+		"LICENSE",
+		"README.md",
+		"package.json"
+	]
+}

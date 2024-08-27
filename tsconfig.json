@@ -1,0 +1,33 @@
+{
+	"include": [
+		"./plugins/*.ts",
+		"./scripts/*.ts",
+		"./index.ts",
+	],
+	"compilerOptions": {
+		"target": "es2020",
+		"module": "es2020",
+		"moduleResolution": "node",
+		"declaration": true,
+		"declarationMap": false,
+		"outDir": "./dist",
+		"sourceMap": false,
+		"noEmit": false,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"esModuleInterop": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
+	}
+}
