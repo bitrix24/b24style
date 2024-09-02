@@ -53,8 +53,6 @@ interface PluginOptions
 	 * * b24-roboto-mono;
 	 * * b24-montserrat;
 	 * * b24-comforter-brush;
-	 * * b24-ruble-bitrix;
-	 * * b24-ruble-bitrix-helvetic;
 	 *
 	 * You need copy them to public folder ~> ./*\/fonts
 	 
@@ -120,7 +118,7 @@ export default plugin.withOptions<PluginOptions>(
 			
 			console.log(`├─────────────────────────────────────────────`);
 			console.log(`├─ [Colors]`);
-			console.log(`├── ✔colors`);
+			console.log(`├── ✔ colors`);
 			console.log(`├─ [Fonts]`);
 		}
 		let fontFamily: {};
@@ -132,10 +130,10 @@ export default plugin.withOptions<PluginOptions>(
 			{
 				console.log(`├── ✔︎fontFamily {local}`);
 				console.log(
-					`├─── Ⓘ You need to copy the fonts to the folder where your uncompiled main.css file is located`
+					`├─── Ⓘ You need to copy the fonts to the folder where your not compiled main.css file is located`
 				);
 				console.log(
-					`├─── 'Ⓘ Call npx ${b24UiInfo.name} copy-fonts --dest=assets/css/fonts `
+					`├─── Ⓘ Call npx ${b24UiInfo.name} copy-fonts --dest=assets/css/fonts `
 				);
 			}
 		}
@@ -161,7 +159,7 @@ export default plugin.withOptions<PluginOptions>(
 			
 			if(isLog)
 			{
-				console.log(`├── ✔︎fontFamily`);
+				console.log(`├── ✔ ︎fontFamily`);
 				allowed.forEach((fontKey) =>
 				{
 					console.log(`├───── ${fontKey}`);
@@ -170,35 +168,35 @@ export default plugin.withOptions<PluginOptions>(
 					.filter(key => !allowed.includes(key))
 					.forEach((fontKey) =>
 					{
-						console.log(`├───── ×${fontKey}`);
+						console.log(`├───── × ${fontKey}`);
 					});
+				
+				console.log(
+					`├───── Ⓘ To connect the remaining fonts, set the parameter  useLocalFonts = true in the plugin configuration.`
+				);
 			}
-			
-			console.log(
-				`├───── Ⓘ To connect the remaining fonts, set the parameter  useLocalFonts = true in the plugin configuration.`
-			);
 		}
 		
 		if(isLog)
 		{
-			console.log(`├── ✔fontSize`);
-			console.log(`├── ✔lineHeight`);
-			console.log(`├── ✔fontWeight`);
-			console.log(`├── ✔letterSpacing`);
+			console.log(`├── ✔ fontSize`);
+			console.log(`├── ✔ lineHeight`);
+			console.log(`├── ✔ fontWeight`);
+			console.log(`├── ✔ letterSpacing`);
 			console.log(`├─ [Spacing]`);
-			console.log(`├── ✔spacing`);
+			console.log(`├── ✔ spacing`);
 			console.log(`├─ [Border]`);
-			console.log(`├── ✔borderRadius`);
-			console.log(`├── ✔borderWidth`);
+			console.log(`├── ✔ borderRadius`);
+			console.log(`├── ✔ borderWidth`);
 			console.log(`├─ [Shadow]`);
-			console.log(`├── ✔boxShadow`);
+			console.log(`├── ✔ boxShadow`);
 			console.log(`├─ [Transition]`);
-			console.log(`├── ✔transitionDuration`);
+			console.log(`├── ✔ transitionDuration`);
 			console.log(`├─ [Animation]`);
-			console.log(`├── ✔keyframes`);
-			console.log(`├── ✔animation`);
+			console.log(`├── ✔ keyframes`);
+			console.log(`├── ✔ animation`);
 			console.log(`├─ [Plugins]`);
-			console.log(`├── ✔@tailwindcss/forms`);
+			console.log(`├── ✔ @tailwindcss/forms`);
 		}
 		
 		return {

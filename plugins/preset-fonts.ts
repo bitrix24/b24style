@@ -160,12 +160,6 @@ export default {
 			'b24-comforter-brush': [
 				'"Comforter Brush"'
 			],
-			'b24-ruble-bitrix': [
-				'rubleBitrix',
-			],
-			'b24-ruble-bitrix-helvetic': [
-				'rubleBitrixHelvetic',
-			],
 			// endregion ////
 		},
 		fontSize: {

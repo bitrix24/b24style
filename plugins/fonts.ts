@@ -198,7 +198,7 @@ class FontsCollection
 
 // region Init ////
 const groupsFonts = new FontsCollection();
-// region Roboto ////
+	// region Roboto ////
 groupsFonts.addItem(new FontLocal(
 	'Roboto',
 	300,
@@ -458,27 +458,6 @@ groupsFonts.addItem(new FontLocal(
 		'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD'
 	))
 	// endregion ////
-	
-	// region rubleBitrix ////
-	.addItem(new FontLocal(
-		'rubleBitrix',
-		'normal',
-		FontStyle.normal,
-		FontDisplay.swap,
-		'',
-		'fonts/ruble/BitrixlRubOpenSans-Regular',
-		[FontType.ttf, FontType.woff2, FontType.woff],
-	))
-	.addItem(new FontLocal(
-		'rubleBitrixHelvetic',
-		'normal',
-		FontStyle.normal,
-		FontDisplay.swap,
-		'',
-		'fonts/ruble/BitrixlRubHelvetica-Regular',
-		[FontType.ttf, FontType.woff2, FontType.woff],
-	));
-// endregion ////
 // endregion ////
 
 export default groupsFonts;
