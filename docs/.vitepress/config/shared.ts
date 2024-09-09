@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { whyframe } from '@whyframe/core'
+import { whyframeVue } from '@whyframe/vue'
 
 export const shared = defineConfig({
 	title: '@bitrix24/b24style',
@@ -38,5 +40,15 @@ export const shared = defineConfig({
 				}
 			}
 		},
+	},
+	vite: {
+		plugins: [
+			whyframe({
+				defaultSrc: '/frames/default'
+			}),
+			whyframeVue({
+				include: /\.(?:vue|md)$/
+			})
+		]
 	}
 })

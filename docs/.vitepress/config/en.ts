@@ -48,7 +48,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
 			collapsed: false,
 			items: [
 				{ text: 'Getting Started', link: 'getting-started' },
-				{ text: 'Config', link: 'config' },
+				{ text: 'Plugin Settings', link: 'config' },
 				{ text: 'Working with Fonts', link: 'working-with-fonts' },
 			]
 		},
