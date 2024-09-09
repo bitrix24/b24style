@@ -44,7 +44,7 @@ export const shared = defineConfig({
 	vite: {
 		plugins: [
 			whyframe({
-				defaultSrc: '/frames/default'
+				defaultSrc: '/frames/default.html'
 			}),
 			whyframeVue({
 				include: /\.(?:vue|md)$/
