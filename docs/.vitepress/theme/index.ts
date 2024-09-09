@@ -24,6 +24,7 @@ export default {
 	enhanceApp({app})
 	{
 		app.provide('presetFonts', presetFonts)
+		app.provide('presetShadow', presetShadow)
 		app.provide('presetAnimation', presetAnimation)
 		app.provide('presetTransition', presetTransition)
 		app.component('ShTailwindCssLink', ShTailwindCssLink)

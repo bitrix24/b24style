@@ -49,9 +49,7 @@ const prepareVariable = (prefix, variable) => {
 	</tbody>
 </table>
 
-## Basic usage {#basic-usage}
-
-### Changing transition duration {#changing-transition-duration}
+## Changing transition duration {#changing-transition-duration}
 
 Use the `duration-*` utilities to control an element’s transition-duration.
 

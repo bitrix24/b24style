@@ -143,46 +143,44 @@
 :root
 {
     --sh-data-font-sise: 12px;
+    --sh-data-th-color: #334155;
+    --sh-data-th-border: #e5e7eb;
+    --sh-data-td-border: #f1f5f9;
     --sh-data-variable-block-color: #0ea5e9;
     --sh-data-code-block-color: #4f46e5;
 }
 
 .dark
 {
+    --sh-data-th-color: #cbd5e1;
+    --sh-data-th-border: #94a3b833;
+    --sh-data-td-border: #94a3b81a;
+    --vp-c-bg: #0f172a;
+    --vp-c-bg-alt: #161618;
+    --vp-c-bg-elv: #202127;
+    --vp-c-bg-soft: #202127;
+    
     --sh-data-variable-block-color: #38bdf8;
     --sh-data-code-block-color: #a5b4fc;
 }
 
-.vp-doc h2
+.vp-doc .info-wrapper
 {
-    color: var(--sh-data-variable-block-color);
-    font-size: 12px;
-    margin: 48px 0 6px;
-    padding-top: 8px;
-    letter-spacing: -0.02em;
-    line-height: 1;
+    overflow-x: scroll;
+    width: 100%;
+    min-width: 100%;
 }
 
-.vp-doc h2 .header-anchor
+.vp-doc table.info
 {
-    top: 8px;
-}
-
-.vp-doc h2 + h3 {
-    margin: 8px 0 0;
-    letter-spacing: -0.01em;
-    line-height: 28px;
-    font-size: 20px;
-}
-
-.vp-doc table.info {
     text-align: left;
-    display: block;
+    display: table;
     border-collapse: collapse;
     margin: 20px 0;
     overflow-x: auto;
     
     border-spacing: 0;
+    border: none;
     max-width: 100%;
     width: 100%;
     position: relative;
@@ -190,10 +188,38 @@
     box-sizing: border-box;
 }
 
+.vp-doc table.info tr
+{
+    border: none;
+}
+
 .vp-doc table.info th,
 .vp-doc table.info td
 {
+    padding: 8px 16px 8px 0;
     vertical-align: top;
+    border: none;
+    border-bottom: 1px solid var(--sh-data-td-border);
+}
+
+.vp-doc table.info th
+{
+    color: var(--sh-data-th-color);
+    background-color: transparent;
+    position: sticky;
+    border-bottom-color: var(--sh-data-th-border);
+}
+
+.vp-doc table.info th + th,
+.vp-doc table.info td + td
+{
+    padding: 8px 16px;
+}
+
+.vp-doc table.info th:last-child,
+.vp-doc table.info td:last-child
+{
+    padding: 8px 0 8px 16px;
 }
 
 .vp-doc table.info td div[class*='language-']
@@ -211,7 +237,7 @@
 
 .vp-doc table.info td div[class*='language-'] code
 {
-    padding: 0 12px!important;
+    padding: 0!important;
     font-size: var(--sh-data-font-sise);
 }
 
@@ -219,6 +245,7 @@
 {
     color: var(--sh-data-variable-block-color);
     font-size: var(--sh-data-font-sise);
+    text-wrap: nowrap;
 }
 
 .vp-doc table.info td.value
