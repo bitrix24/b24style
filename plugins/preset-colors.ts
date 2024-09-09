@@ -89,8 +89,8 @@ const palette = {
 		800: '#00789E',
 		900: '#006484',
 		950: '#004f69',
-	},
-};
+	}
+}
 
 export default {
 	theme: {
@@ -202,7 +202,7 @@ export default {
 					900: palette.gray['900'] || '#525C69',
 					master: palette.black.DEFAULT || '#333333',
 					solid: palette.black.solid || '#000000',
-				},
+				}
 			}
 		)
 	}

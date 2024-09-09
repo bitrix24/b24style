@@ -17,6 +17,6 @@ export default {
 			widest: '0.1em',
 			'2': '0.1em',
 			'3': '0.15em',
-		},
-	},
+		}
+	}
 }

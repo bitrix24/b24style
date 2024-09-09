@@ -15,7 +15,7 @@ const fontFamilySystem = [
 	'"Apple Color Emoji"',
 	'"Segoe UI Emoji"',
 	'"Segoe UI Symbol"'
-];
+]
 
 const fontSize = {
 	// font-size: 7px line-height: 1 ////
@@ -62,7 +62,7 @@ const fontSize = {
 	'10xl': ['6rem', {lineHeight: '1'}],
 	// font-size: 128px line-height: 1; ////
 	'11xl': ['8rem', {lineHeight: '1'}],
-};
+}
 
 const lineHeight = {
 	reset: '1',
@@ -88,7 +88,7 @@ const lineHeight = {
 	8: '2rem',
 	9: '2.25rem',
 	10: '2.5rem',
-};
+}
 
 const fontWeight = {
 	thin: '100',
@@ -102,7 +102,7 @@ const fontWeight = {
 	extrabold: '800',
 	black: '900',
 	extrablack: '950'
-};
+}
 
 export default {
 	theme: {

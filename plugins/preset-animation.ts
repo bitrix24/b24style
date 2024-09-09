@@ -1,5 +1,6 @@
-// import tailwindConfig from 'tailwindcss/defaultConfig'
-// tailwindConfig.theme?.animation;
+/**
+ * @link https://tailwindcss.com/docs/animation
+ */
 
 export default {
 	theme: {
@@ -22,6 +23,6 @@ export default {
 					strokeDashoffset: '-124px'
 				}
 			}
-		},
+		}
 	}
 }

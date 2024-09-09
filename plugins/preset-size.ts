@@ -62,7 +62,7 @@ export default {
 			'5xl': '40px',
 			'6xl': '48px',
 			'7xl': '64px',
-			'8xl': '72px',
-		},
-	},
+			'8xl': '72px'
+		}
+	}
 }

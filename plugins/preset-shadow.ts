@@ -48,7 +48,7 @@ export default {
 			'left-xl': '-6px 0px 10px 0px rgb(0 0 0 / 0.1)',
 			'left-2xl': '-8px 0px 10px 0px rgb(0 0 0 / 0.1)',
 			'left-3xl': '-12px 0px 17px 0px rgb(0 0 0 / 0.1)',
-			'left-4xl': '-16px 0px 24px 0px rgb(0 0 0 / 0.11)',
-		},
+			'left-4xl': '-16px 0px 24px 0px rgb(0 0 0 / 0.11)'
+		}
 	}
 }

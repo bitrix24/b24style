@@ -1,7 +1,5 @@
 /**
- * @link https://tailwindcss.com/docs/customizing-spacing
- *
- * @memo for negative value use -pt-md || -mr-5 ...
+ * @link https://tailwindcss.com/docs/transition-duration
  */
 
 export default {
@@ -17,7 +15,7 @@ export default {
 			300: '300ms',
 			500: '500ms',
 			700: '700ms',
-			1000: '1000ms',
-		},
-	},
+			1000: '1000ms'
+		}
+	}
 }

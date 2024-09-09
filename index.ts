@@ -1,3 +1,3 @@
-import bitrix24UiPlugin from './plugins/bitrix24ui';
+import bitrix24UiPlugin from './plugins/bitrix24ui'
 
-export default bitrix24UiPlugin;
+export default bitrix24UiPlugin

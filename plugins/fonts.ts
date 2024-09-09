@@ -18,15 +18,15 @@ interface FontConfig extends RecursiveKeyValuePair
 
 interface IFont
 {
-	getConfig(): FontConfig;
+	getConfig(): FontConfig
 	
-	getTitle(): string;
+	getTitle(): string
 }
 
 enum FontStyle
 {
 	normal = 'normal',
-	italic = 'italic',
+	italic = 'italic'
 }
 
 enum FontDisplay
@@ -40,22 +40,22 @@ enum FontType
 	woff = 'woff',
 	woff2 = 'woff2',
 	ttf = 'ttf',
-	eot = 'eot',
+	eot = 'eot'
 }
 
 class FontLocal
 	implements IFont
 {
-	#path: string;
-	#typeList: FontType[];
-	#unicodeRange: null|string;
+	#path: string
+	#typeList: FontType[]
+	#unicodeRange: null|string
 	
-	#family: string;
-	#localTitle: string;
+	#family: string
+	#localTitle: string
 	
-	#weight: number|string;
-	#style: FontStyle;
-	#display: FontDisplay;
+	#weight: number|string
+	#style: FontStyle
+	#display: FontDisplay
 	
 	constructor(
 		family: string,
@@ -68,63 +68,63 @@ class FontLocal
 		unicodeRange: null|string = null
 	)
 	{
-		this.#family = family;
+		this.#family = family
 		
-		this.#weight = weight;
-		this.#style = style;
-		this.#display = display;
+		this.#weight = weight
+		this.#style = style
+		this.#display = display
 		
-		this.#localTitle = localTitle;
-		this.#typeList = typeList;
-		this.#path = path;
-		this.#unicodeRange = unicodeRange;
+		this.#localTitle = localTitle
+		this.#typeList = typeList
+		this.#path = path
+		this.#unicodeRange = unicodeRange
 	}
 	
 	private getPath(): string
 	{
-		return this.#path;
+		return this.#path
 	}
 	
 	private getLocalTitle(): string
 	{
-		return this.#localTitle;
+		return this.#localTitle
 	}
 	
 	private getFamily(): string
 	{
-		return this.#family;
+		return this.#family
 	}
 	
 	private getWeight(): string
 	{
-		return `${this.#weight}`;
+		return `${this.#weight}`
 	}
 	
 	private getStyle(): FontStyle
 	{
-		return this.#style;
+		return this.#style
 	}
 	
 	private getDisplay(): FontDisplay
 	{
-		return this.#display;
+		return this.#display
 	}
 	
 	private getTypeList(): FontType[]
 	{
-		return this.#typeList;
+		return this.#typeList
 	}
 	
 	private getUnicodeRange(): string
 	{
-		return this.#unicodeRange || '';
+		return this.#unicodeRange || ''
 	}
 	
 	private getSrc(): string
 	{
 		if(this.getTypeList().length < 1)
 		{
-			return '';
+			return ''
 		}
 		
 		return this.getTypeList().map((type: FontType) =>
@@ -132,17 +132,17 @@ class FontLocal
 			switch(type)
 			{
 				case FontType.local:
-					return `local('${this.getLocalTitle()}')`;
+					return `local('${this.getLocalTitle()}')`
 				case FontType.woff2:
-					return `url('${this.getPath()}.woff2') format('woff2')`;
+					return `url('${this.getPath()}.woff2') format('woff2')`
 				case FontType.woff:
-					return `url('${this.getPath()}.woff') format('woff')`;
+					return `url('${this.getPath()}.woff') format('woff')`
 				case FontType.ttf:
-					return `url('${this.getPath()}.ttf') format('truetype')`;
+					return `url('${this.getPath()}.ttf') format('truetype')`
 				case FontType.eot:
-					return `url('${this.getPath()}.eot') format('eot')`;
+					return `url('${this.getPath()}.eot') format('eot')`
 			}
-		}).join(',');
+		}).join(',')
 	}
 	
 	getConfig(): FontConfig
@@ -165,12 +165,12 @@ class FontLocal
 						: {}
 				)
 			)
-		} as FontConfig;
+		} as FontConfig
 	}
 	
 	getTitle(): string
 	{
-		return `${this.getFamily()} ${this.getWeight()} ${this.getStyle()}`;
+		return `${this.getFamily()} ${this.getWeight()} ${this.getStyle()}`
 	}
 }
 
@@ -184,13 +184,14 @@ class FontsCollection
 	
 	addItem(item: IFont)
 	{
-		this.#list.push(item);
-		return this;
+		this.#list.push(item)
+		
+		return this
 	}
 	
 	getList(): IFont[]
 	{
-		return this.#list;
+		return this.#list
 	}
 }
 
@@ -460,4 +461,4 @@ groupsFonts.addItem(new FontLocal(
 	// endregion ////
 // endregion ////
 
-export default groupsFonts;
+export default groupsFonts
