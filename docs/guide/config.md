@@ -1,11 +1,11 @@
-# Configuration {#config}
+# Plugin Settings {#config}
 
 The plugin supports the following settings:
 
-| Parameter       | Description                                          | Default Value |
-|-----------------|------------------------------------------------------|---------------|
-| `logs`          | Output logs to the terminal during the build process | `false`       |
-| `useLocalFonts` | Use [custom fonts](./working-with-fonts)             | `false`       |
+| **Parameter**<br/>`default`   | **Description**<br/>                                 |
+|-------------------------------|------------------------------------------------------|
+| **logs**<br/>`false`          | Output logs to the terminal during the build process |
+| **useLocalFonts**<br/>`false` | Use [local fonts](./working-with-fonts#fonts-local)  |
 
 Example:
 
@@ -25,5 +25,4 @@ module.exports = {
     ]
 };
 ```
-
 :::
