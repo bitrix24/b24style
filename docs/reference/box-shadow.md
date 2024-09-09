@@ -56,7 +56,7 @@ Use `shadow-none` to remove an existing box shadow from an element. This is most
 	<div class="flex sm:block overflow-auto sm:overflow-visible scroll-p-8">
 		<div class="flex items-center justify-around gap-12 font-mono font-bold shrink-0 px-8 py-16">
 			<div class="flex flex-col items-center shrink-0">
-				<p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-lg</p>
+				<p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-none</p>
 				<div class="w-24 h-24 rounded-lg bg-white shadow-none dark:bg-gray-400"></div>
 			</div>
 		</div>
@@ -77,7 +77,7 @@ Use the `shadow-inner` utility to apply a subtle inset box shadow to an element.
 	<div class="flex sm:block overflow-auto sm:overflow-visible scroll-p-8">
 		<div class="flex items-center justify-around gap-12 font-mono font-bold shrink-0 px-8 py-16">
 			<div class="flex flex-col items-center shrink-0">
-				<p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-lg</p>
+				<p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-inner</p>
 				<div class="w-24 h-24 rounded-lg bg-white shadow-inner dark:bg-gray-400 ring-1 ring-black/5"></div>
 			</div>
 		</div>
