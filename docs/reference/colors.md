@@ -1,4 +1,4 @@
-# Цвета {#colors}
+# colors {#colors}
 
 	inherit: 'inherit',
 	current: 'currentColor',

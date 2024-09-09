@@ -1,22 +1,12 @@
-# Работа со шрифтами {#fonts}
+# fonts {#fonts}
 
 @todo
-
-по Умолчанию поставляется только три семейства шрифтов
 
 `Roboto`
 `Montserrat`
 `Open Sans`
 `Comforter Brush`
 
-Они используют настройки операционной системы в которой работает ваш продукт
-
-Если требуется подключить дополнительный шрифты то необходимо сделать следующее
-
-...
-
-`rubleBitrix`
-`rubleBitrixHelvetic`
 
 const fontFamilySystem = [
 'system-ui',
@@ -144,119 +134,119 @@ fontFamily: {
 ],
 // endregion ////
 
-			// region Fonts.Custom ////
-			'b24-opensans': [
-				'"Open Sans"',
-				'"Helvetica Neue"',
-				'Helvetica',
-				'Arial',
-				'sans-serif'
-			],
-			'b24-roboto': [
-				'Roboto',
-				'"Helvetica Neue"',
-				'Helvetica',
-				'Arial',
-				'monospace'
-			],
-			'b24-roboto-mono': [
-				'"Roboto Mono"',
-				'"Helvetica Neue"',
-				'Helvetica',
-				'Arial',
-				'sans-serif'
-			],
-			'b24-montserrat': [
-				'Montserrat',
-				'"Helvetica Neue"',
-				'Helvetica',
-				'Arial',
-				'sans-serif'
-			],
-			'b24-comforter-brush': [
-				'"Comforter Brush"'
-			],
-			'b24-ruble-bitrix': [
-				'rubleBitrix',
-			],
-			'b24-ruble-bitrix-helvetic': [
-				'rubleBitrixHelvetic',
-			],
-			// endregion ////
-		},
-		fontSize: {
-			...fontSize,
-			'h1': [
-				fontSize['5xl'][0],
-				{
-					lineHeight: lineHeight['3xs'],
-					fontWeight: fontWeight.light,
-				}
-			],
-			'h2': [
-				fontSize['4xl'][0],
-				{
-					lineHeight: lineHeight['2xs'],
-					fontWeight: fontWeight.light,
-				}
-			],
-			'h3': [
-				fontSize['3xl'][0],
-				{
-					lineHeight: lineHeight['2xs'],
-					fontWeight: fontWeight.light,
-				}
-			],
-			'h4': [
-				fontSize['2xl'][0],
-				{
-					lineHeight: lineHeight['sm'],
-					fontWeight: fontWeight.normal,
-				}
-			],
-			'h5': [
-				fontSize['xl'][0],
-				{
-					lineHeight: lineHeight['sm'],
-					fontWeight: fontWeight.normal,
-				}
-			],
-			'h6': [
-				fontSize['md'][0],
-				{
-					lineHeight: lineHeight['md'],
-					fontWeight: fontWeight.normal,
-				}
-			],
-			'txt-xs': [
-				fontSize['xs'][0],
-				{
-					lineHeight: lineHeight['sm'],
-					fontWeight: fontWeight.normal,
-				}
-			],
-			'txt-sm': [
-				fontSize['sm'][0],
-				{
-					lineHeight: lineHeight['md'],
-					fontWeight: fontWeight.normal,
-				}
-			],
-			'txt-md': [
-				fontSize['md'][0],
-				{
-					lineHeight: lineHeight['md'],
-					fontWeight: fontWeight.normal,
-				}
-			],
-			'txt-lg': [
-				fontSize['lg'][0],
-				{
-					lineHeight: lineHeight['md'],
-					fontWeight: fontWeight.normal,
-				}
-			],
-		},
-		lineHeight: lineHeight,
-		fontWeight: fontWeight
-	}
+// region Fonts.Custom ////
+		'b24-opensans': [
+			'"Open Sans"',
+			'"Helvetica Neue"',
+			'Helvetica',
+			'Arial',
+			'sans-serif'
+		],
+		'b24-roboto': [
+			'Roboto',
+			'"Helvetica Neue"',
+			'Helvetica',
+			'Arial',
+			'monospace'
+		],
+		'b24-roboto-mono': [
+			'"Roboto Mono"',
+			'"Helvetica Neue"',
+			'Helvetica',
+			'Arial',
+			'sans-serif'
+		],
+		'b24-montserrat': [
+			'Montserrat',
+			'"Helvetica Neue"',
+			'Helvetica',
+			'Arial',
+			'sans-serif'
+		],
+		'b24-comforter-brush': [
+			'"Comforter Brush"'
+		],
+		'b24-ruble-bitrix': [
+			'rubleBitrix',
+		],
+		'b24-ruble-bitrix-helvetic': [
+			'rubleBitrixHelvetic',
+		],
+		// endregion ////
+	},
+	fontSize: {
+		...fontSize,
+		'h1': [
+			fontSize['5xl'][0],
+			{
+				lineHeight: lineHeight['3xs'],
+				fontWeight: fontWeight.light,
+			}
+		],
+		'h2': [
+			fontSize['4xl'][0],
+			{
+				lineHeight: lineHeight['2xs'],
+				fontWeight: fontWeight.light,
+			}
+		],
+		'h3': [
+			fontSize['3xl'][0],
+			{
+				lineHeight: lineHeight['2xs'],
+				fontWeight: fontWeight.light,
+			}
+		],
+		'h4': [
+			fontSize['2xl'][0],
+			{
+				lineHeight: lineHeight['sm'],
+				fontWeight: fontWeight.normal,
+			}
+		],
+		'h5': [
+			fontSize['xl'][0],
+			{
+				lineHeight: lineHeight['sm'],
+				fontWeight: fontWeight.normal,
+			}
+		],
+		'h6': [
+			fontSize['md'][0],
+			{
+				lineHeight: lineHeight['md'],
+				fontWeight: fontWeight.normal,
+			}
+		],
+		'txt-xs': [
+			fontSize['xs'][0],
+			{
+				lineHeight: lineHeight['sm'],
+				fontWeight: fontWeight.normal,
+			}
+		],
+		'txt-sm': [
+			fontSize['sm'][0],
+			{
+				lineHeight: lineHeight['md'],
+				fontWeight: fontWeight.normal,
+			}
+		],
+		'txt-md': [
+			fontSize['md'][0],
+			{
+				lineHeight: lineHeight['md'],
+				fontWeight: fontWeight.normal,
+			}
+		],
+		'txt-lg': [
+			fontSize['lg'][0],
+			{
+				lineHeight: lineHeight['md'],
+				fontWeight: fontWeight.normal,
+			}
+		],
+	},
+	lineHeight: lineHeight,
+	fontWeight: fontWeight
+}

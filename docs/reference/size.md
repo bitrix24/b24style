@@ -1,4 +1,4 @@
-# Размеры {#size}
+# Size {#size}
 
 spacing: {
 0: '0px',

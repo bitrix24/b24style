@@ -1,4 +1,4 @@
-# расстояние между буквами {#letterSpacing}
+# letterSpacing {#letterSpacing}
 letterSpacing: {
 tighter: '-0.05em',
 'neg-3': '-0.03em',

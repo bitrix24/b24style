@@ -1,6 +1,6 @@
-# Границы {#border}
+# border {#border}
 
-### Радиус
+### Radius
 	none: '0px',
 	'3xs': '2px',
 	'2xs': '4px',
@@ -16,7 +16,7 @@
 	pill: '99rem',
 	full: '9999px',
 
-### Толщина
+### Width
 	DEFAULT: '1px',
 	thin: '1px',
 	0: '0px',
