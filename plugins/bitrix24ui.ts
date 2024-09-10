@@ -5,7 +5,7 @@ import presetColors from './preset-colors'
 import presetFonts from './preset-fonts'
 import presetShadow from './preset-shadow'
 import presetSize from './preset-size'
-import presetTest from './preset-text'
+import presetText from './preset-text'
 import presetTransition from './preset-transition'
 import presetAnimation from './preset-animation'
 import groupsFonts from './fonts'
@@ -223,7 +223,7 @@ export default plugin.withOptions<PluginOptions>(
 					fontWeight: presetFonts.theme.fontWeight
 				},
 				{
-					letterSpacing: presetTest.theme.letterSpacing
+					letterSpacing: presetText.theme.letterSpacing
 				},
 				{
 					spacing: presetSize.theme.spacing
