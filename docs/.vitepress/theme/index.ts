@@ -13,7 +13,7 @@ import groupsFonts from '../../../plugins/fonts';
 
 import presetShadow from '../../../plugins/preset-shadow';
 import presetSize from '../../../plugins/preset-size';
-import presetTest from '../../../plugins/preset-text';
+import presetText from '../../../plugins/preset-text';
 
 import presetAnimation from '../../../plugins/preset-animation';
 import presetTransition from '../../../plugins/preset-transition';
@@ -23,6 +23,8 @@ export default {
 	Layout: DynamicLayout,
 	enhanceApp({app})
 	{
+		app.provide('presetText', presetText)
+		app.provide('presetBorder', presetBorder)
 		app.provide('presetFonts', presetFonts)
 		app.provide('presetShadow', presetShadow)
 		app.provide('presetAnimation', presetAnimation)
