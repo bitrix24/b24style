@@ -166,7 +166,7 @@
 
 .vp-doc .info-wrapper
 {
-    overflow-x: scroll;
+    overflow-x: auto;
     width: 100%;
     min-width: 100%;
 }
@@ -269,7 +269,10 @@ code
 iframe
 {
     width: 100%;
+    min-height: 200px;
     border: none;
+    
+    scrollbar-width: thin;
 }
 
 /**
