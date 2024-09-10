@@ -1,6 +1,16 @@
 import { defineConfig } from 'vitepress'
+import path from 'path'
 import { whyframe } from '@whyframe/core'
 import { whyframeVue } from '@whyframe/vue'
+
+/**
+ * @memo fix custom fonts
+ */
+const customAlias: any = {};
+if(process.env.NODE_ENV === 'production')
+{
+	customAlias['fonts'] = path.resolve(__dirname, '../../../docs/public/frames/fonts');
+}
 
 export const shared = defineConfig({
 	title: '@bitrix24/b24style',
@@ -42,6 +52,9 @@ export const shared = defineConfig({
 		},
 	},
 	vite: {
+		resolve: {
+			alias: customAlias
+		},
 		plugins: [
 			whyframe({
 				defaultSrc: '/frames/default.html'
