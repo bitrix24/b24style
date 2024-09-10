@@ -71,6 +71,9 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
 			collapsed: false,
 			items: [
 				{ text: 'Font Family', link: 'font-family' },
+				{ text: 'Font Size', link: 'font-size' },
+				{ text: 'Font Weight', link: 'font-weight' },
+				{ text: 'Line Height', link: 'line-height' },
 				{ text: 'Letter Spacing', link: 'letter-spacing' },
 			]
 		},
@@ -78,7 +81,14 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
 			text: 'Borders',
 			collapsed: false,
 			items: [
-				{ text: 'Borders', link: 'border' },
+				{ text: 'Border Radius', link: 'border-radius' },
+				{ text: 'Border Width', link: 'border-width' },
+			]
+		},
+		{
+			text: 'Effects',
+			collapsed: false,
+			items: [
 				{ text: 'Box Shadow', link: 'box-shadow' },
 			]
 		},
