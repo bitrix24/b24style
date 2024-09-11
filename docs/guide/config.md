@@ -22,7 +22,7 @@ The plugin supports the following settings:
 			<tr>
 				<td translate="no" class="variable">useLocalFonts</td>
 				<td translate="no" class="value">
-					Use <a href="/guide/working-with-fonts.html#local-font-family">Local Font Family</a>
+					Use <a href="/guide/working-with-fonts#local-font-family">Local Font Family</a>
 				</td>
 				<td translate="no" class="value">false</td>
 			</tr>
