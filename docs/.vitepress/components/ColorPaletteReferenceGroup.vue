@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { inject, computed, ComputedRef } from 'vue'
+import { computed, ComputedRef } from 'vue'
 import ColorPalette from '../components/ColorPalette.vue'
 import type { ColorGroup, Color } from "../types/colors";
 
@@ -97,15 +97,6 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	--sh-title-color: #e2e8f0;
 }
 
-.color-palette-reference--title
-{
-	--tw-text-opacity: 1;
-	color: var(--sh-title-color);
-	font-weight: 600;
-	font-size: .875rem;
-	line-height: 1.25rem;
-}
-
 .color-palette-reference--group
 {
 	row-gap: .75rem;
@@ -152,12 +143,6 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	.color-palette-reference--inner
 	{
 		display: contents;
-	}
-	
-	.color-palette-reference--title
-	{
-		padding-top: .625rem;
-		
 	}
 	
 	.color-palette-reference--group
