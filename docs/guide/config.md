@@ -13,7 +13,7 @@ The plugin supports the following settings:
 		</thead>
 		<tbody>
 			<tr>
-				<td translate="no" class="variable">font-b24-system</td>
+				<td translate="no" class="variable">logs</td>
 				<td translate="no" class="value">
 					Output logs to the terminal during the build process
 				</td>
