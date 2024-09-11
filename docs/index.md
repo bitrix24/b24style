@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "@bitrix24/b24style"
   text: "Bitrix24 Visual Styles Created with Tailwind CSS"
-  tagline: "Designing the Application Exactly Like Bitrix24"
+  tagline: "Design Your Apps to Match the Bitrix24 Style"
   actions:
     - theme: brand
       text: Quickstart
