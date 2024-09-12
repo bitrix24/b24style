@@ -53,7 +53,7 @@ const prepareVariable = (prefix, variable) => {
 
 You can control the typeface of text using the font family utilities.
 
-In most cases you will use `font-b24-system`, `font-b24-system-mono` or `font-b24-helvetica	`.
+In most cases you will use `font-b24-system`, `font-b24-system-mono` or `font-b24-helvetica`.
 
 <iframe data-why style="min-height: 360px">
 <div class="flex flex-col gap-8">
@@ -79,11 +79,11 @@ In most cases you will use `font-b24-system`, `font-b24-system-mono` or `font-b2
 </iframe>
 
 ```html
-<p class="font-b24-system ...">...</p>
-<p class="font-b24-system-mono ...">...</p>
-<p class="font-b24-helvetica ...">...</p>
+<p class="font-b24-system ...">The quick brown fox ...</p>
+<p class="font-b24-system-mono ...">The quick brown fox ...</p>
+<p class="font-b24-helvetica ...">The quick brown fox ...</p>
 ```
 
-## Local Font Family {#local-font-family}
+## Local font family {#local-font-family}
 
 The use of local fonts is described on the page [Local Font Family](/guide/working-with-fonts.html#local-font-family)

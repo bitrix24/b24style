@@ -52,7 +52,7 @@ const prepareVariable = (prefix, variable) => {
 	</table>
 </div>
 
-## Loader Dash {#loader-dash}
+## Loader dash {#loader-dash}
 
 Add the `animate-loader-dash` utility to display the data loading indicator.
 
@@ -97,7 +97,7 @@ Add the `animate-loader-dash` utility to display the data loading indicator.
 </div>
 ```
 
-## Spin Slow {#spin-slow}
+## Spin slow {#spin-slow}
 
 Add the `animate-spin-slow` utility to add a linear spin animation to elements like loading indicators.
 
@@ -110,7 +110,6 @@ Add the `animate-spin-slow` utility to add a linear spin animation to elements l
 		</button>
 	</div>
 </div>
-	
 </iframe>
 
 ```html

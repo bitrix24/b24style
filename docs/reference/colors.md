@@ -22,6 +22,8 @@ const presetColors = inject('presetColors');
 	</div>
 </div>
 
+To align with the Bitrix24 style, you should use only the colors from this palette. Other colors are not recommended.
+
 ## Palette {#palette}
 <ColorPaletteReference />
 
