@@ -19,20 +19,17 @@ export const shared = defineConfig({
 	cleanUrls: false,
 	metaChunk: true,
 	
-	base: '/',
+	base: '/b24style/',
 	/* prettier-ignore */
 	head: [
 		['link', { rel: 'icon', href: '/favicon.ico' }],
 		['meta', { name: 'theme-color', content: '#5f67ee' }],
 		['meta', { property: 'og:type', content: 'website' }],
 		['meta', { property: 'og:locale', content: 'en' }],
-		['meta', { property: 'og:title', content: '@bitrix24/b24style | Bitrix24 Styles Based on Tailwind CSS' }],
-		['meta', { property: 'og:site_name', content: 'b24style' }],
-		/**
-		 * @todo make this
-		 */
-		//['meta', { property: 'og:image', content: 'https://vitepress.dev/vitepress-og.jpg' }],
-		//['meta', { property: 'og:url', content: 'https://vitepress.dev/' }],
+		['meta', { property: 'og:title', content: '@bitrix24/b24style | Bitrix24 Visual Styles Created with Tailwind CSS' }],
+		['meta', { property: 'og:site_name', content: '@bitrix24/b24style' }],
+		['meta', { property: 'og:image', content: 'https://bitrix24.github.io/b24style/bitrix24_style.jpg' }],
+		['meta', { property: 'og:url', content: 'https://bitrix24.github.io/b24style/' }],
 	],
 	
 	themeConfig: {
