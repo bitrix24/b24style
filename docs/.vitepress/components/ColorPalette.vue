@@ -37,13 +37,13 @@ const props = withDefaults(defineProps<Props>(), {})
 	position: relative;
 	display: flex;
 	
-	--tw-ring-offset-width: 0px;
-	--tw-ring-offset-color: #fff;
-	--tw-shadow: 0 0 #0000;
-	--tw-ring-color: #6b64641a;
-	--tw-ring-inset: inset;
-	--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-	--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+	--sh-ring-offset-width: 0px;
+	--sh-ring-offset-color: #fff;
+	--sh-shadow: 0 0 #0000;
+	--sh-ring-color: #6b64641a;
+	--sh-ring-inset: inset;
+	--sh-ring-offset-shadow: var(--sh-ring-inset) 0 0 0 var(--sh-ring-offset-width) var(--sh-ring-offset-color);
+	--sh-ring-shadow: var(--sh-ring-inset) 0 0 0 calc(1px + var(--sh-ring-offset-width)) var(--sh-ring-color);
 	
 	--sh-title-color: #0f172a;
 	--sh-title-data-color: #64748b;
@@ -51,8 +51,8 @@ const props = withDefaults(defineProps<Props>(), {})
 
 .dark .color-palette
 {
-	--tw-ring-offset-color: #fff;
-	--tw-ring-color: #ffffff57;
+	--sh-ring-offset-color: #fff;
+	--sh-ring-color: #ffffff57;
 	
 	--sh-title-color: #ffffff;
 	--sh-title-data-color: #64748b;
@@ -72,7 +72,7 @@ const props = withDefaults(defineProps<Props>(), {})
 	width: 2.5rem;
 	border-radius: .25rem;
 	
-	box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+	box-shadow: var(--sh-ring-offset-shadow), var(--sh-ring-shadow), var(--sh-shadow, 0 0 #0000);
 }
 
 .color-palette--is-default
@@ -81,13 +81,13 @@ const props = withDefaults(defineProps<Props>(), {})
 	left: -0.25rem;
 	top: -0.5rem;
 	border-radius: 12px;
-	--tw-bg-opacity: 1;
-	background-color: rgb(85 155 230 / var(--tw-bg-opacity));
+	--sh-bg-opacity: 1;
+	background-color: rgb(85 155 230 / var(--sh-bg-opacity));
 	padding: 2px 4px;
 	font-size: 9px;
 	line-height: 0.85rem;
-	--tw-text-opacity: 1;
-	color: rgb(255 255 255 / var(--tw-text-opacity));
+	--sh-text-opacity: 1;
+	color: rgb(255 255 255 / var(--sh-text-opacity));
 }
 
 .color-palette--wrapper-title
@@ -111,7 +111,7 @@ const props = withDefaults(defineProps<Props>(), {})
 	font-size: .75rem;
 	line-height: 1rem;
 	text-transform: lowercase;
-	--tw-text-opacity: 1;
+	--sh-text-opacity: 1;
 	color: var(--sh-title-data-color);
 }
 
@@ -128,15 +128,15 @@ const props = withDefaults(defineProps<Props>(), {})
 	
 	.color-palette--is-default
 	{
-		--tw-space-y-reverse: 0;
-		margin-top: calc(0.375rem* calc(1 - var(--tw-space-y-reverse)));
-		margin-bottom: calc(0.375rem* var(--tw-space-y-reverse));
+		--sh-space-y-reverse: 0;
+		margin-top: calc(0.375rem* calc(1 - var(--sh-space-y-reverse)));
+		margin-bottom: calc(0.375rem* var(--sh-space-y-reverse));
 	}
 	
 	.color-palette--inner>:not([hidden])~:not([hidden]) {
-		--tw-space-y-reverse: 0;
-		margin-top: calc(.375rem* calc(1 - var(--tw-space-y-reverse)));
-		margin-bottom: calc(.375rem* var(--tw-space-y-reverse));
+		--sh-space-y-reverse: 0;
+		margin-top: calc(.375rem* calc(1 - var(--sh-space-y-reverse)));
+		margin-bottom: calc(.375rem* var(--sh-space-y-reverse));
 	}
 	
 	.color-palette--title-data
