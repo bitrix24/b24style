@@ -46,5 +46,11 @@ This completes the installation.
 
 ## What's Next? {#what-s-next}
 
-- Read about [plugin settings](./config).
-- Learn how to add additional fonts in the section [Working with Fonts](./working-with-fonts).
+- Read about [plugin settings](/guide/config).
+- Learn how to add additional fonts in the section [Working with Fonts](/guide/working-with-fonts).
+- Review the [spacing scale](/reference/scale).
+- Take a look at the [spacing scale](/reference/scale).
+- Familiarize yourself with the materials from [the typography](/reference/font-family) guide.
+- Study [Box Shadow](/reference/box-shadow): utilities for managing the shadows around elements.
+- Take a look at the methods for specifying element [borders](/reference/border-width) and [radii](/reference/border-radius).
+- Read about [transition duration](/reference/transition-duration) and [animation](/reference/animation)
