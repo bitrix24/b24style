@@ -12,13 +12,16 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/bitrix24/b24style
-
+  image:
+    src: /bitrix24_style-logo-lage.webp
+    alt: '@bitrix24/b24style'
+  
 features:
-  - title: '@todo Feature A'
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 'Unified Style for All Components'
+    details: LWith the plugin, all components of your application will be styled uniformly, adhering to Bitrix24 standards
+  - title: 'Accelerated Development'
+    details: Use ready-made utility classes for quick styling, allowing you to focus more time on the functionality of your application
+  - title: 'Flexibility and Responsiveness'
+    details: The plugin allows you to easily adapt styles for various devices and screens while maintaining the unified visual language of Bitrix24
 ---
 
