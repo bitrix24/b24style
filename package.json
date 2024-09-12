@@ -1,6 +1,6 @@
 {
 	"name": "@bitrix24/b24style",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": "Bitrix",
 	
 	"license": "MIT",
@@ -49,8 +49,8 @@
 		"playground:clear-fonts": "rimraf ./playground/public/fonts",
 		"playground:copy-fonts": "npx copy-fonts --dest=playground/public/fonts",
 		"playground:run-dev": "npm run --workspace=playground dev",
-		"docs:dev": "rimraf ./docs/public/frames/fonts && npx copy-fonts --dest=docs/public/frames/fonts && vitepress dev docs",
-		"docs:build": "rimraf ./docs/public/frames/fonts && npx copy-fonts --dest=docs/public/frames/fonts && vitepress build docs",
+		"docs:dev": "rimraf ./docs/public/frames/fonts & npx copy-fonts --dest=docs/public/frames/fonts & vitepress dev docs",
+		"docs:build": "rimraf ./docs/public/frames/fonts & npx copy-fonts --dest=docs/public/frames/fonts & vitepress build docs",
 		"docs:preview": "vitepress preview docs"
 	},
 	"dependencies": {
