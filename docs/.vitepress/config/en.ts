@@ -63,7 +63,7 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
 			collapsed: false,
 			items: [
 				{ text: 'Colors', link: 'colors' },
-				{ text: 'Sizes', link: 'size' },
+				{ text: 'Scale', link: 'scale' },
 			]
 		},
 		{
