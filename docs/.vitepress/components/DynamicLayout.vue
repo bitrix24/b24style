@@ -5,13 +5,15 @@ import FrameDefaultLayout from './FrameDefaultLayout.vue'
 
 const route = useRoute()
 
-if(route.path.startsWith('/frames/default'))
+const baseFolder = import.meta.env.BASE_URL;
+
+if(route.path.startsWith(`${baseFolder}frames/default`))
 {
 	import('./tailwind.postcss')
 }
 </script>
 
 <template>
-	<FrameDefaultLayout v-if="route.path.startsWith('/frames/default')" />
+	<FrameDefaultLayout v-if="route.path.startsWith(`${baseFolder}frames/default`)" />
 	<Theme.Layout v-else />
 </template>

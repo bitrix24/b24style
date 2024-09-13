@@ -12,6 +12,10 @@ if(process.env.NODE_ENV === 'production')
 	customAlias['fonts'] = path.resolve(__dirname, '../../../docs/public/frames/fonts');
 }
 
+const domain: string = 'https://bitrix24.github.io';
+//const baseFolder: string = '/';
+const baseFolder: string = '/b24style/';
+
 export const shared = defineConfig({
 	title: '@bitrix24/b24style',
 	
@@ -19,7 +23,7 @@ export const shared = defineConfig({
 	cleanUrls: false,
 	metaChunk: true,
 	
-	base: '/b24style/',
+	base: baseFolder,
 	/* prettier-ignore */
 	head: [
 		['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -28,8 +32,8 @@ export const shared = defineConfig({
 		['meta', { property: 'og:locale', content: 'en' }],
 		['meta', { property: 'og:title', content: '@bitrix24/b24style | Bitrix24 Visual Styles Created with Tailwind CSS' }],
 		['meta', { property: 'og:site_name', content: '@bitrix24/b24style' }],
-		['meta', { property: 'og:image', content: 'https://bitrix24.github.io/b24style/bitrix24_style.jpg' }],
-		['meta', { property: 'og:url', content: 'https://bitrix24.github.io/b24style/' }],
+		['meta', { property: 'og:image', content: `${domain}${baseFolder}bitrix24_style.jpg` }],
+		['meta', { property: 'og:url', content: `${domain}${baseFolder}` }],
 	],
 	
 	themeConfig: {
@@ -54,7 +58,14 @@ export const shared = defineConfig({
 		},
 		plugins: [
 			whyframe({
-				defaultSrc: '/frames/default.html'
+				defaultSrc: `${baseFolder}frames/default.html`,
+				/**
+				 * @memo fix base url for dev mode.
+				 * @memo At prod this work
+				 * @link https://github.com/bluwy/whyframe/issues/34
+				 */
+				// @ts-ignore ////
+				shBase: baseFolder
 			}),
 			whyframeVue({
 				include: /\.(?:vue|md)$/
