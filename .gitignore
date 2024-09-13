@@ -28,8 +28,6 @@ Thumbs.db
 /playground/public/style.css
 docs/.vitepress/dist
 docs/.vitepress/cache
-docs/public/frames/fonts
-/docs/public/fonts
 
 # TypeScript
 *.tsbuildinfo
