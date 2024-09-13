@@ -52,7 +52,7 @@
 		"docs:dev": "rimraf ./docs/public/frames/fonts & npx copy-fonts --dest=docs/public/frames/fonts & vitepress dev docs",
 		"docs:build": "npm-run-all -s docs:build:*",
 		"docs:build:init": "npm run build",
-		"docs:build:clear": "rimraf ./docs/public/frames/fonts",
+		"docs:build:clear": "rimraf ./docs/public/frames",
 		"docs:build:copy": "npx copy-fonts --dest=docs/public/frames/fonts",
 		"docs:build:docs": "vitepress build docs",
 		"docs:preview": "vitepress preview docs"
