@@ -67,7 +67,7 @@ const tailwindSize = computed(() => {
 <div class="header-info">
 	<div class="header-info-descr">
 		<div>
-			Plugin includes a generous and comprehensive numeric spacing scale. The values are proportional, so `16` is twice as much spacing as `8` for example.
+			Plugin includes a generous and comprehensive numeric spacing scale. The values are proportional, so <code>16</code> is twice as much spacing as <code>8</code> for example.
 		</div>
 		<div class="header-info-nav">
 			<ShTailwindCssLink
