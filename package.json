@@ -49,7 +49,9 @@
 		"playground:clear-fonts": "rimraf ./playground/public/fonts",
 		"playground:copy-fonts": "npx copy-fonts --dest=playground/public/fonts",
 		"playground:run-dev": "npm run --workspace=playground dev",
+		
 		"docs:dev": "rimraf ./docs/public/frames/fonts & npx copy-fonts --dest=docs/public/frames/fonts & vitepress dev docs",
+		
 		"docs:build": "npm-run-all -s docs:build:*",
 		"docs:build:init": "npm run build",
 		"docs:build:docs": "vitepress build docs",
@@ -57,7 +59,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.7",
-		"tailwindcss": "^3.4.10"
+		"tailwindcss": "^3.4.12"
 	},
 	"devDependencies": {
 		"@whyframe/core": "^0.1.11",
