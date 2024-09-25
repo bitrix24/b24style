@@ -26,7 +26,7 @@ export const shared = defineConfig({
 	base: baseFolder,
 	/* prettier-ignore */
 	head: [
-		['link', { rel: 'icon', href: '/favicon.ico' }],
+		['link', { rel: 'icon', href: `${baseFolder}favicon.ico` }],
 		['meta', { name: 'theme-color', content: '#5f67ee' }],
 		['meta', { property: 'og:type', content: 'website' }],
 		['meta', { property: 'og:locale', content: 'en' }],
