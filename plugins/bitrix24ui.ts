@@ -60,7 +60,7 @@ interface PluginOptions
 	 * Use ```npm @bitrix24/ui copy-fonts```. It's copy to public/fonts.
 	 * Or set target folder like this ~> ```npm @bitrix24/ui copy-fonts --dest=FolderForPublicContent/fonts```
 	 *
-	 * @default true
+	 * @default false
 	 */
 	useLocalFonts?: boolean
 }
@@ -68,7 +68,7 @@ interface PluginOptions
 export type {PluginOptions as Config}
 
 export default plugin.withOptions<PluginOptions>(
-	(options = {logs: false, useLocalFonts: true}) => ({addBase}) =>
+	(options = {logs: false, useLocalFonts: false}) => ({addBase}) =>
 	{
 		let isLog = true
 		if(!options.logs)
@@ -103,7 +103,7 @@ export default plugin.withOptions<PluginOptions>(
 			console.log()
 		}
 	},
-	(options = {logs: true, useLocalFonts: true}) =>
+	(options = {logs: false, useLocalFonts: false}) =>
 	{
 		let isLog = true
 		if(!options.logs)
