@@ -1,4 +1,9 @@
 # Changelog
+## 0.1.2 (2024-09-25)
+
+- fix work def value
+- update tailwind version
+
 ## 0.1.1 (2024-09-14)
 
 - public project
