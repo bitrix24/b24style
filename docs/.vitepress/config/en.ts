@@ -1,5 +1,5 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
-import pkg from "../../../package.json";
+import { configParams } from './params'
 
 export const en = defineConfig({
 	lang: 'en-US',
@@ -30,12 +30,13 @@ function nav(): DefaultTheme.NavItem[] {
 		{text: 'Guide', link: '/guide/getting-started'},
 		{text: 'Reference', link: '/reference/colors'},
 		{
-			text: pkg.version,
+			text: configParams.version,
 			items: [
 				{
 					text: 'Changelog',
-					link: 'https://github.com/bitrix24/b24style/blob/main/CHANGELOG.md'
+					link: `${configParams.github}/blob/main/CHANGELOG.md`
 				},
+				... configParams.relative
 			]
 		}
 	]
