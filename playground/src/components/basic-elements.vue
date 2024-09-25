@@ -34,7 +34,7 @@
 										fuisset honestatis qui. Solum vituperata definitiones te vis, vis alia falli
 										doming ea. Sale liber et vel. Oratio accumsan et mea. Elitr accommodare
 										deterruisset eam te, vim munere pertinax consetetur at.</p>
-									<p class="mb-3">Solum vituperata definitiones te vis, vis alia falli doming ea.
+									<p class="mb-3 line-clamp-3">Solum vituperata definitiones te vis, vis alia falli doming ea.
 										Postulant assueverit ea his. Vix paulo sanctus scripserit ex, te iriure
 										insolens voluptatum qui. Lorem ipsum dolor sit amet, an eos lorem ancillae
 										expetenda, vim et utamur quaestio. Nisl omittam complectitur pro an, quem

@@ -8,7 +8,7 @@ let config = {
 		extend: {},
 	},
 	plugins: [
-		require('../dist/index')({
+		require('@bitrix24/b24style')({
 			logs: true,
 			useLocalFonts: true,
 		}),
