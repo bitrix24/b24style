@@ -18,7 +18,7 @@ hero:
   
 features:
   - title: 'Unified Style for All Components'
-    details: LWith the plugin, all components of your application will be styled uniformly, adhering to Bitrix24 standards
+    details: With the plugin, all components of your application will be styled uniformly, adhering to Bitrix24 standards
   - title: 'Accelerated Development'
     details: Use ready-made utility classes for quick styling, allowing you to focus more time on the functionality of your application
   - title: 'Flexibility and Responsiveness'
