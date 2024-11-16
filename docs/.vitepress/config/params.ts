@@ -11,6 +11,10 @@ export const configParams = Object.freeze({
 		{
 			text: '@bitrix24/b24icons',
 			link: 'https://bitrix24.github.io/b24icons/guide/icons.html'
+		},
+		{
+			text: '@bitrix24/b24jssdk',
+			link: 'https://bitrix24.github.io/b24jssdk/'
 		}
 	]
 })
