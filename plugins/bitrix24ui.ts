@@ -201,7 +201,7 @@ export default plugin.withOptions<PluginOptions>(
 		}
 		
 		return {
-			presets: [],
+			// presets: [], ////
 			useLocalFonts: options.useLocalFonts,
 			theme: Object.assign(
 				{

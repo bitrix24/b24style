@@ -1,4 +1,8 @@
 # Changelog
+## 0.1.3 (2024-11-26)
+
+- Compatible with tailwindcss v4
+
 ## 0.1.2 (2024-09-25)
 
 - fix work def value
