@@ -19,8 +19,7 @@ const props = withDefaults(defineProps<Props>(), {})
 			></div>
 			<div class="color-palette--is-default" v-if="color.isDefault" data-class="absolute -top-2 -left-1 bg-accent-light-blue text-white px-2xs py-3xs text-5xs rounded-lg">default</div>
 			<div class="color-palette--wrapper-title" data-class="px-0.5">
-				<div class="color-palette--title" data-class="w-6 font-medium text-xs text-gray-900 2xl:w-full dark:text-white
-				">
+				<div class="color-palette--title" data-class="w-6 font-medium text-xs text-gray-900 2xl:w-full dark:text-white">
 					{{ color.title }}
 				</div>
 				<div class="color-palette--title-data" data-class="text-gray-500 text-xs font-mono lowercase dark:text-gray-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">

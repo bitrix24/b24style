@@ -3,15 +3,14 @@ import { inject, computed, ComputedRef } from 'vue'
 import ColorPalette from '../components/ColorPalette.vue'
 import type { ColorGroup, Color } from "../types/colors";
 
-
 const presetColors: any = inject('presetColors')
 
 const basePalette = [
-	'gray', 'red', 'orange', 'green', 'blue',
-];
-
-const groupPalette = [
-	100, 150, 200, 300, 400, 500, 600, 700, 800, 900, 950
+	'gray', 'slate',
+	'red', 'orange',
+	'green', 'collab',
+	'blue', 'cyan',
+	'ai'
 ];
 
 const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
@@ -30,7 +29,19 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 		
 		result[base] = {
 			title: groupTitle,
-			groups: Object.fromEntries(groupPalette.map((group) => [group, []])),
+			groups: {
+				'100' : [],
+				'150' : [],
+				'200' : [],
+				'300' : [],
+				'400' : [],
+				'500' : [],
+				'600' : [],
+				'700' : [],
+				'800' : [],
+				'900' : [],
+				'950' : []
+			},
 			defaultValue: ''
 		} as ColorGroup
 	}
@@ -52,56 +63,74 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 		for (const [keyColor, valueColor] of Object.entries(value))
 		{
 			if(keyColor === 'DEFAULT'){ continue; }
+			if(keyColor === 'solid'){ continue; }
 			
-			let needKeyValue = parseInt(keyColor);
+			let needKeyValue = Number.parseInt(keyColor);
 			
-			/**
-			 * fix theme.red.solid
-			 */
-			if(
-				keyGroup === 'red'
-				&& keyColor === 'solid'
-			)
+			// region get group key ////
+			// 100, 150, 200, 300, 400, 500, 600, 700, 800, 900, 950 ////
+			if(needKeyValue <= 100)
 			{
-				needKeyValue = 750
+				needKeyValue = 100
 			}
-			
-			const paletteKeys = Object.keys(group.groups)
-			for(const existKey of paletteKeys)
+			else if(needKeyValue < 200)
 			{
-				const existKeyValue = parseInt(existKey);
-				
-				if(existKeyValue >= 900)
-				{
-					if(existKeyValue >= needKeyValue)
-					{
-						needKeyValue = existKeyValue;
-						break;
-					}
-				}
-				else if(existKeyValue > 150)
-				{
-					if(existKeyValue + 50 >= needKeyValue)
-					{
-						needKeyValue = existKeyValue;
-						break;
-					}
-				}
-				else
-				{
-					if(existKeyValue >= needKeyValue)
-					{
-						needKeyValue = existKeyValue;
-						break;
-					}
-				}
+				needKeyValue = 150
 			}
+			else if(needKeyValue < 300)
+			{
+				needKeyValue = 200
+			}
+			else if(needKeyValue < 400)
+			{
+				needKeyValue = 300
+			}
+			else if(needKeyValue < 500)
+			{
+				needKeyValue = 400
+			}
+			else if(needKeyValue < 600)
+			{
+				needKeyValue = 500
+			}
+			else if(needKeyValue < 700)
+			{
+				needKeyValue = 600
+			}
+			else if(needKeyValue < 800)
+			{
+				needKeyValue = 700
+			}
+			else if(needKeyValue < 900)
+			{
+				needKeyValue = 800
+			}
+			else if(needKeyValue < 950)
+			{
+				needKeyValue = 900
+			}
+			else
+			{
+				needKeyValue = 950
+			}
+			// endregion ////
 			
-			group.groups[needKeyValue.toString()].push({
-				title: keyColor,
-				value: valueColor,
-				isDefault: group.defaultValue === valueColor
-			} as Color)
+			if(!group.groups[needKeyValue.toString()])
+			{
+				console.error(
+					'Wrong group key',
+					needKeyValue,
+					group
+				)
+			}
+			else
+			{
+				group.groups[needKeyValue.toString()].push({
+					title: keyColor,
+					value: valueColor,
+					isDefault: group.defaultValue === valueColor
+				} as Color)
+			}
 		}
 	})
 	
@@ -112,7 +141,6 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	// endregion ////
 	
 	// region Custom add ////
-	
 	// region Gray ////
 	result.gray.groups['100'].push({
 		title: 'white',
@@ -127,21 +155,19 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	} as Color)
 	
 	result.gray.groups['950'].push({
-		title: 'solid',
-		value: presetColors.theme.colors.black.solid,
-		isDefault: result.gray.defaultValue === presetColors.theme.colors.black.solid
+		title: 'dark',
+		value: presetColors.theme.colors.black.dark,
+		isDefault: result.gray.defaultValue === presetColors.theme.colors.black.dark
+	} as Color)
+	
+	result.gray.groups['950'].push({
+		title: 'ebony',
+		value: presetColors.theme.colors.black.ebony,
+		isDefault: result.gray.defaultValue === presetColors.theme.colors.black.ebony
 	} as Color)
 	// endregion ////
-	
-	// region orange ////
-	result.orange.groups['100'].push({
-		title: 'beige',
-		value: presetColors.theme.colors.beige,
-		isDefault: result.orange.defaultValue === presetColors.theme.colors.beige
-	} as Color)
 	// endregion ////
-	
-	// endregion ////
+
 	return result
 })
 

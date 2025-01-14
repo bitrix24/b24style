@@ -15,7 +15,6 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	
 	const result: Record<string, ColorGroup> = {}
 	
-	
 	let groupTitle = base
 		.split('')
 		.flatMap((l, i) => {
@@ -32,7 +31,13 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	} as ColorGroup
 	
 	Object.entries(props.group).forEach(([keyColor, valueColor]) => {
-		const group = result[base];
+		const group = result[base]
+		let title = `${base}-${keyColor}`
+		
+		if(base === 'symlink')
+		{
+			title = `${keyColor}`
+		}
 		
 		if(keyColor === 'DEFAULT')
 		{
@@ -43,7 +48,7 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 		group.groups[keyColor] = [];
 		
 		group.groups[keyColor].push({
-			title: `${base}-${keyColor}`,
+			title: title,
 			value: valueColor,
 			isDefault: group.defaultValue === valueColor
 		} as Color)
@@ -51,14 +56,13 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	
 	return result
 })
-
 </script>
 
 <template>
 	<div class="color-palette-reference" data-class="grid grid-cols-[repeat(auto-fit,minmax(8rem,1fr))] gap-x-2 gap-y-8 sm:grid-cols-1">
 		<div
-			v-for="(list, title) in colorGroups"
-			:key="title"
+			v-for="(list, titleGroups) in colorGroups"
+			:key="titleGroups"
 			class="color-palette-reference--inner" data-class="2xl:contents"
 		>
 			<div class="color-palette-reference--group" data-class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
@@ -67,12 +71,12 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 					:key="title"
 				>
 					<div class="color-palette-reference--list">
-					<template
-						v-for="(color, indexColor) in colors"
-						:key="indexColor"
-					>
-						<ColorPalette :color="color"/>
-					</template>
+						<template
+							v-for="(color, indexColor) in colors"
+							:key="indexColor"
+						>
+							<ColorPalette :color="color"/>
+						</template>
 					</div>
 				</template>
 			</div>
@@ -111,10 +115,6 @@ const colorGroups: ComputedRef<Record<string, ColorGroup>> = computed(() => {
 	row-gap: 1.6rem;
 	column-gap: .5rem;
 	margin-top: .75rem;
-	/*
-	grid-template-columns: repeat(1, minmax(0, 1fr));
-	display: grid;
-	*/
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
