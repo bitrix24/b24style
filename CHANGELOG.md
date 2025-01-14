@@ -1,4 +1,15 @@
 # Changelog
+
+## 1.0.1 (2025-01-14)
+
+- updated dependencies
+- updated color palette
+  - add color.slate
+  - add color.cyan
+  - add color.collab
+  - add color.ai
+- updated example for docs.box-shadow in dark mode
+
 ## 0.1.3 (2024-11-26)
 
 - Compatible with tailwindcss v4
