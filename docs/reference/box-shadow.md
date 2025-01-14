@@ -74,7 +74,7 @@ Use the `shadow-inner` utility to apply a subtle inset box shadow to an element.
 <div class="grid grid-cols-1 gap-x-10 gap-y-8 place-items-center">
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-inner</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-inner dark:bg-gray-400 ring-1 ring-black/5"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-inner dark:shadow-ai-500  dark:bg-gray-400 ring-1 ring-black/5"></div>
 	</div>
 </div>
 </iframe>
@@ -91,19 +91,19 @@ Use the `shadow-sm`, `shadow`, `shadow-md`, `shadow-lg`, `shadow-xl`, or `shadow
 <div class="grid grid-cols-2 gap-x-10 gap-y-8 place-items-center">
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-md</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-md dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-md dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-lg</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-lg dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-lg dark:shadow-ai-500  dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-xl dark:shadow-ai-500  dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-2xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-2xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-2xl dark:shadow-ai-500  dark:bg-gray-400"></div>
 	</div>
 </div>
 </iframe>
@@ -122,39 +122,39 @@ utilities to apply different sized outer box shadows to the top edge of an eleme
 <div class="grid grid-cols-2 gap-x-10 gap-y-8 place-items-center">
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-2xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-2xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-2xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-sm</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-sm dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-sm dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-md</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-md dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-md dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-lg</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-lg dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-lg dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-2xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-2xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-2xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-3xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-3xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-3xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-top-4xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-top-4xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-top-4xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 </div>
 </iframe>
@@ -178,39 +178,39 @@ utilities to apply different sized outer box shadows to the right edge of an ele
 <div class="grid grid-cols-2 gap-x-10 gap-y-8 place-items-center">
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-2xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-2xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-2xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-sm</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-sm dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-sm dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-md</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-md dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-md dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-lg</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-lg dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-lg dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-2xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-2xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-2xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-3xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-3xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-3xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-right-4xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-right-4xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-right-4xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 </div>
 </iframe>
@@ -233,39 +233,39 @@ Use the `shadow-bottom-2xs`, `shadow-bottom-xs`, `shadow-bottom-sm`, `shadow-bot
 <div class="grid grid-cols-2 gap-x-10 gap-y-8 place-items-center">
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-2xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-2xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-2xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-sm</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-sm dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-sm dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-md</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-md dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-md dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-lg</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-lg dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-lg dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-2xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-2xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-2xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-3xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-3xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-3xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-bottom-4xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-4xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-bottom-4xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 </div>
 </iframe>
@@ -290,39 +290,39 @@ utilities to apply different sized outer box shadows to the left edge of an elem
 <div class="grid grid-cols-2 gap-x-10 gap-y-8 place-items-center">
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-2xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-2xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-2xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-xs</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-xs dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-xs dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-sm</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-sm dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-sm dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-md</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-md dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-md dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-lg</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-lg dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-lg dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-2xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-2xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-2xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-3xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-3xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-3xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-4">
 		<p class="font-medium text-sm text-gray-800 font-mono text-center dark:text-gray-400">shadow-left-4xl</p>
-		<div class="w-24 h-24 rounded-lg bg-white shadow-left-4xl dark:bg-gray-400"></div>
+		<div class="w-24 h-24 rounded-lg bg-white shadow-left-4xl dark:shadow-ai-500 dark:bg-gray-400"></div>
 	</div>
 </div>
 </iframe>
